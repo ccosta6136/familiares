@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiares</title>
+    <style type="text/css">
+        .encabezado {
+             
+            padding: 5px;
+            list-style-type:none;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul  class="encabezado">
+        <li class="encabezado">NOMBRE | TELEFONO</li>
+    </ul>
+    {% for familiar in familiares %}
+        <ul> 
+            <li style="padding: 5px;"> {{familiar.nombre}},{{familiar.telefono}}  </li>
+        </ul>
+    {% endfor %}
+</body>
+</html>
